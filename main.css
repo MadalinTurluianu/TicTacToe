@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+    width: clamp(20rem, 50vw, 40rem);
+    height: clamp(20rem, 50vw, 40rem);
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: clamp(3rem, 7vw, 8rem);
+}
+
+.col-center {
+    border-left: clamp(0.5rem, 1vw, 1rem) solid black;
+    border-right: clamp(0.5rem, 1vw, 1rem) solid black;
+}
+
+.row-center {
+    border-top: clamp(0.5rem, 1vw, 1rem) solid black;
+    border-bottom: clamp(0.5rem, 1vw, 1rem) solid black;
+}
