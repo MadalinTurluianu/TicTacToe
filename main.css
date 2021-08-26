@@ -1,38 +1,105 @@
+@font-face {
+    font-family: WalterTurncoat;
+    src: url(./WalterTurncoat-Regular.ttf);
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    font-family: WalterTurncoat;
+    background-image: url(./paperBackdrown.jpg);
     width: 100%;
     height: 100vh;
+    background-color: rgba(226, 193, 152,0.1);
+}
+
+h1{
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 5rem;
 }
 
 main {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: white;
-    width: clamp(20rem, 50vw, 40rem);
-    height: clamp(20rem, 50vw, 40rem);
+    width: clamp(20rem, 50vw, 35rem);
+    height: clamp(20rem, 50vw, 35rem);
 }
 
 .box {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: clamp(3rem, 7vw, 8rem);
 }
 
 .col-center {
-    border-left: clamp(0.5rem, 1vw, 1rem) solid black;
-    border-right: clamp(0.5rem, 1vw, 1rem) solid black;
+    border-left: clamp(0.3rem, 1vw, 0.5rem) solid rgba(0,0,0,0.9);
+    border-right: clamp(0.3rem, 1vw, 0.5rem) solid rgba(0,0,0,0.9);
 }
 
 .row-center {
-    border-top: clamp(0.5rem, 1vw, 1rem) solid black;
-    border-bottom: clamp(0.5rem, 1vw, 1rem) solid black;
+    border-top: clamp(0.3rem, 1vw, 0.5rem) solid rgba(0,0,0,0.9);
+    border-bottom: clamp(0.3rem, 1vw, 0.5rem) solid rgba(0,0,0,0.9);
+}
+
+.initial-settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    background-color: transparent;
+    font-family: WalterTurncoat;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.player1 {
+    margin-bottom: 1rem;
+}
+
+.player2 {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.player1 input:first-of-type {
+    margin-right: 1rem;
+    transform: translateX(4px);
+}
+
+input:first-of-type {
+    margin-left: 0.5rem;
+}
+
+button {
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: WalterTurncoat;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 6rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover,
+button:active {
+    transform: scale(1.1);
 }
