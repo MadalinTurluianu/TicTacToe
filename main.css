@@ -23,6 +23,7 @@ h1{
 
 main {
     display: none;
+    width: 50vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: clamp(20rem, 50vw, 35rem);
@@ -102,4 +103,9 @@ button {
 button:hover,
 button:active {
     transform: scale(1.1);
+}
+
+.play-again__btn {
+    display: none;
+    width: 10rem;
 }
