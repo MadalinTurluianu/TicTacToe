@@ -14,6 +14,9 @@ function Player(name, symbol, isFirst) {
   return { name, symbol, isFirst };
 }
 
+
+// game initialization
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   const nameP1 = inputP1.value;

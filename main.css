@@ -109,3 +109,7 @@ button:active {
     display: none;
     width: 10rem;
 }
+
+h2 {
+    margin-top: 2rem;
+}
